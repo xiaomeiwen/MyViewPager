@@ -21,6 +21,16 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.view_pager_tab);
         tabLayout.setupWithViewPager(viewPager);
+
+
+        tabLayout.setBackgroundResource(R.color.tab_bg);
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_favorite_white_24dp);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_people_white_24dp);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_phone_white_24dp);
+        tabLayout.getTabAt(3).setIcon(R.drawable.ic_settings_white_24dp);
+        // remove the shadow of action bar
+        getSupportActionBar().setElevation(0);
     }
 
 
