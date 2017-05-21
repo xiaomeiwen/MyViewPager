@@ -9,6 +9,9 @@
     android:orientation="vertical"
     tools:context="com.xiaomeiw.resume.myviewpager.MainActivity">
 
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <android.support.design.widget.TabLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -16,7 +19,10 @@
         android:background="@color/tab_bg"
         android:elevation="10dp"
         app:tabMode="fixed"
+        app:tabTextColor="@color/tab_text_color"
+        app:tabSelectedTextColor="@color/tab_text_color_highlight"
         app:tabGravity="fill"/>
+    </android.support.design.widget.AppBarLayout>
     <android.support.v4.view.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"

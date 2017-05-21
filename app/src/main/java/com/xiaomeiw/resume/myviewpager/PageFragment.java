@@ -45,4 +45,11 @@ public class PageFragment extends Fragment {
         int page = getArguments().getInt(KEY_PAGE);
         textView.setText("Page " + page);
     }
+    //    onViewCreated(View view, Bundle savedInstanceState)
+//
+//    Called immediately after onCreateView(LayoutInflater, ViewGroup, Bundle) has returned,
+//    but before any saved state has been restored in to the view.
+//    This gives subclasses a chance to initialize themselves once they know their view hierarchy has been completely created.
+//    The fragment's view hierarchy is not however attached to its parent at this point.
+
 }
